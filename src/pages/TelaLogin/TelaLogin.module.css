@@ -1,0 +1,104 @@
+.loginPage {
+  font-family: var(--loginFont) !important;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    90deg,
+    rgba(37, 54, 85, 1) 0%,
+    rgba(14, 20, 32, 1) 100%
+  );
+}
+
+.loginContainer {
+  width: 800px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 450px 350px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 4px;
+}
+
+.leftContainer {
+  background-image: url('../../assets/imagens/background.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 4px 0 0 4px;
+  padding: 32px !important;
+}
+
+.conteudo {
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  justify-content: start;
+  gap: 8px;
+}
+
+.logoCircle {
+  --size: 36px;
+  width: var(--size);
+  min-width: var(--size);
+  max-width: var(--size);
+  height: var(--size);
+  min-height: var(--size);
+  max-height: var(--size);
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.logoText h6:first-child {
+  font-weight: 700;
+  text-align: start;
+  line-height: 18px;
+}
+
+.logoText h6:last-child {
+  font-weight: 300;
+  text-align: start;
+  line-height: 18px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: end;
+}
+
+.titleWellcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  font-size: 24px;
+}
+
+.titleWellcome h1:first-child {
+  font-weight: 300;
+  line-height: 26px;
+}
+
+.titleWellcome h1:last-child {
+  font-weight: 700;
+}
+
+.rightContainer {
+  background-color: #fff;
+  border-radius: 0 4px 4px 0;
+}
