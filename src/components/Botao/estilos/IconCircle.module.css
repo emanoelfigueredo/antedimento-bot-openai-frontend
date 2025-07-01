@@ -1,0 +1,22 @@
+.botao {
+  --size: 30px;
+  display: flex;
+  border: none;
+  background-color: transparent;
+  width: var(--size);
+  min-width: var(--size);
+  max-width: var(--size);
+  height: var(--size);
+  min-height: var(--size);
+  max-height: var(--size);
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.botao:hover {
+  background-color: #f0f0f0;
+}

@@ -1,0 +1,80 @@
+.formulario {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 8px;
+}
+
+.titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 8px;
+}
+
+.formulario h2 {
+  font-weight: 500;
+  color: var(--loginPrimaryColor) !important;
+  font-size: 28px;
+}
+
+.linhaCriarConta {
+  font-size: 12px;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.linha1 {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.linhaCriarConta p {
+  opacity: 0.8;
+}
+
+.linhaCriarConta button {
+  color: var(--loginPrimaryColor) !important;
+  border: none;
+  background-color: transparent;
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.inputsBotoes {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+}
+
+.inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.botoes {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttonEsqueceuSenha {
+  color: var(--loginPrimaryColor) !important;
+  border: none;
+  background-color: transparent;
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
+  font-size: 12px;
+}

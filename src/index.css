@@ -2,7 +2,8 @@
 
 :root {
   --loginFont: 'Poppins', sans-serif;
-  --primaryColor: blue;
+  --loginPrimaryColor: #0e1420;
+  --primaryColor: #0e1420;
 }
 
 * {

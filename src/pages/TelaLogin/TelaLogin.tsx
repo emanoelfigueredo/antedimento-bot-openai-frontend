@@ -1,15 +1,21 @@
 import style from './TelaLogin.module.css';
+import { useState } from 'react';
+import LoginContainer from './components/LoginContainer/LoginContainer';
+import CriarContaContainer from './components/CriarContaContainer/CriarContaContainer';
+import QRCodeContainer from './components/QRCodeContainer/QRCodeContainer';
+
+export type ModoTelaLogin =
+  | 'LOGIN'
+  | 'ESQUECEU_SENHA'
+  | 'CRIAR_CONTA'
+  | 'QRCODE';
 
 export const TelaLogin = () => {
+  const [modoTela, setModoTela] = useState<ModoTelaLogin>('QRCODE');
   return (
     <div className={style.loginPage}>
       <div className={style.loginContainer}>
         <div className={style.leftContainer}>
-          {/* <img
-            className={style.imgBackgroundLoginContainer}
-            src={backgroundLoginContainer}
-            alt="Imagem de background "
-          /> */}
           <div className={style.conteudo}>
             <div className={style.logo}>
               <div className={style.logoCircle}></div>
@@ -26,7 +32,19 @@ export const TelaLogin = () => {
             </div>
           </div>
         </div>
-        <div className={style.rightContainer}></div>
+        <div className={style.rightContainer}>
+          {modoTela == 'LOGIN' ? (
+            <LoginContainer setModoTela={setModoTela}></LoginContainer>
+          ) : modoTela == 'CRIAR_CONTA' ? (
+            <CriarContaContainer
+              setModoTela={setModoTela}
+            ></CriarContaContainer>
+          ) : modoTela == 'QRCODE' ? (
+            <QRCodeContainer setModoTela={setModoTela}></QRCodeContainer>
+          ) : (
+            ''
+          )}
+        </div>
       </div>
     </div>
   );
