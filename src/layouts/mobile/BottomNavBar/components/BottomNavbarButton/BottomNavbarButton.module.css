@@ -1,0 +1,9 @@
+.bottomNavbarButton {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 8px !important;
+  font-size: 12px;
+  font-weight: 700;
+}

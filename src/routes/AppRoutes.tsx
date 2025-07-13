@@ -2,16 +2,21 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import { ProtectedRoute } from './ProtectedRoute/ProtectedRoute';
 import { TelaLogin } from '../pages/TelaLogin/TelaLogin';
 import { TelaDashboard } from '../pages/TelaDashboard/TelaDashboard';
+import MobileLayout from '../layouts/mobile/MobileLayout/MobileLayout';
+import { routes } from './routes';
 
 export const AppRoutes = () => {
   return (
     <Routes>
+      {/* Rotas públicas */}
       <Route path="/login" element={<TelaLogin />} />
 
       {/* Rotas protegidas */}
       <Route element={<ProtectedRoute />}>
-        <Route path="/" element={<Navigate to="/dashboard" replace />} />
-        <Route path="/dashboard" element={<TelaDashboard />} />
+        <Route element={<MobileLayout />}>
+          <Route path="/" element={<Navigate to={routes.dashboard} replace />} />
+          <Route path={routes.dashboard} element={<TelaDashboard />} />
+        </Route>
       </Route>
     </Routes>
   );

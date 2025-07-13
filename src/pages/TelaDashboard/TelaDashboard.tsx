@@ -1,3 +1,8 @@
+import { FaBars } from 'react-icons/fa';
+import Header from '../../layouts/mobile/Header/Header';
+
 export const TelaDashboard = () => {
-  return 'dashboard';
+  return (
+    <Header titulo="Dashboard" right={<FaBars />} left={<FaBars />}></Header>
+  );
 };

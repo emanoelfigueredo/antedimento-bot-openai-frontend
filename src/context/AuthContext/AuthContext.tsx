@@ -10,7 +10,10 @@ type AuthContextType = {
 const AuthContext = createContext({} as AuthContextType);
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
-  const [usuario, setUsuario] = useState<Usuario | null>(null);
+  const [usuario, setUsuario] = useState<Usuario | null>({
+    nome: 'Emanoel',
+    username: 'Emanoel',
+  });
 
   const login = async (
     username: string,
