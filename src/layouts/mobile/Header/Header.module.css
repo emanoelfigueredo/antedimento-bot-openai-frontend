@@ -5,6 +5,10 @@
   font-weight: 700;
 }
 
+.tituloContainer {
+  font-size: 18px;
+}
+
 .leftContainer {
   min-width: 22px;
 }

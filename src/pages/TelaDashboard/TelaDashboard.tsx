@@ -1,6 +1,5 @@
 import style from './TelaDashboard.module.css';
 
-import { FaBars } from 'react-icons/fa';
 import Header from '../../layouts/mobile/Header/Header';
 import Sessao from '../../layouts/mobile/Sessao/Sessao';
 import CardSimples from '../../ui/CardSimples/CardSimples';

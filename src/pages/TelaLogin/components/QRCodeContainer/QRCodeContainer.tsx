@@ -1,7 +1,6 @@
 import { memo } from 'react';
 import style from './QRCodeContainer.module.css';
 import type { ModoTelaLogin } from '../../TelaLogin';
-import BotaoLogin from '../BotaoLogin/BotaoLogin';
 import Botao from '../../../../components/Botao/Botao';
 import { FaArrowLeft } from 'react-icons/fa';
 import { TbReload } from 'react-icons/tb';
