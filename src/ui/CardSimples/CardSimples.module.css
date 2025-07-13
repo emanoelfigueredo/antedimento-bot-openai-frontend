@@ -1,0 +1,21 @@
+.cardSimples {
+  box-shadow: var(--boxShadow1);
+  padding: 24px !important;
+  border-radius: var(--borderRadius1);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 8px;
+}
+
+.tituloContainer {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: start;
+}
+
+.textoContainer {
+  font-size: 20px;
+  font-weight: 700;
+}

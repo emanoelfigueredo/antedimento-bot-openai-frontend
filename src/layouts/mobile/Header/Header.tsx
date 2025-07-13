@@ -11,9 +11,9 @@ interface Props {
 const Header = ({ left, right, titulo }: Props) => {
   return (
     <div className={style.header}>
-      {left && <div className={style.leftContainer}>{left}</div>}
+      <div className={style.leftContainer}>{left}</div>
       {titulo && <div className={style.tituloContainer}>{titulo}</div>}
-      {right && <div className={style.rightContainer}>{right}</div>}
+      <div className={style.rightContainer}>{right}</div>
     </div>
   );
 };

@@ -4,3 +4,11 @@
   padding: 16px !important;
   font-weight: 700;
 }
+
+.leftContainer {
+  min-width: 22px;
+}
+
+.rightContainer {
+  min-width: 22px;
+}
